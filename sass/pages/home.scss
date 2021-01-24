@@ -5,3 +5,8 @@
     rgba($color-primary, 1)
   );
 }
+
+.section-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
