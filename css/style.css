@@ -122,7 +122,8 @@ body {
   position: relative;
   margin-top: 1rem;
   border-radius: 2rem;
-  background-image: linear-gradient(to right bottom, rgba(239, 98, 159, 0.8), rgba(238, 205, 163, 0.8)), url(../img/background.jpg); }
+  background-image: linear-gradient(to right bottom, rgba(239, 98, 159, 0.8), rgba(238, 205, 163, 0.8)), url(../img/background.jpg);
+  margin-bottom: 4rem; }
   .header--logo-box {
     width: 30vw;
     height: auto;
@@ -170,3 +171,66 @@ body {
       display: block;
       opacity: 0.5;
       clip-path: polygon(100% 0, 100% 100%, 0 50%); }
+
+.collection--link {
+  display: flex;
+  justify-content: flex-end; }
+  .collection--link__see-more:link, .collection--link__see-more:visited {
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 3rem;
+    margin-top: -2rem;
+    background: -webkit-linear-gradient(#ef629f, #eecda3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1px solid #ef629f; }
+
+.collection--text {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5rem;
+  background: -webkit-linear-gradient(#ef629f, #eecda3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px solid #ef629f; }
+
+.collection--item {
+  width: 25%;
+  height: 30rem;
+  margin: 5rem 3rem;
+  border-radius: 1rem;
+  background-size: cover;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: all 0.4s;
+  color: transparent; }
+  .collection--item__text {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: "Ubuntu", sans-serif; }
+  .collection--item:hover {
+    color: #f7f7f7;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); }
+  .collection--item-1 {
+    background-image: linear-gradient(to right bottom, rgba(44, 62, 80, 0.4), rgba(44, 62, 80, 0.3)), url(../img/collection-1.jpg);
+    background-position: left; }
+  .collection--item-2 {
+    background-image: linear-gradient(to right bottom, rgba(44, 62, 80, 0.4), rgba(44, 62, 80, 0.3)), url(../img/collection-2.jpg);
+    background-position: left; }
+  .collection--item-3 {
+    background-image: linear-gradient(to right bottom, rgba(44, 62, 80, 0.4), rgba(44, 62, 80, 0.3)), url(../img/collection-3.png);
+    background-position: left; }
+  .collection--item-4 {
+    background-image: linear-gradient(to right bottom, rgba(44, 62, 80, 0.4), rgba(44, 62, 80, 0.3)), url(../img/collection-4.jpg);
+    background-position: left; }
+
+.collection--items {
+  display: flex;
+  justify-content: space-around; }
