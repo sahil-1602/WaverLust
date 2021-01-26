@@ -33,8 +33,13 @@
   }
 
   &--button {
+    display: inline;
     grid-row: 3 / 4;
     margin-left: 6rem;
+    box-shadow: 0 1rem 2rem rgba(#000, 0.5);
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba(#000, 0.15);
+    }
   }
 
   &--second-half {
@@ -59,10 +64,13 @@
   }
 
   &--img-2 {
+    display: inline;
+    margin-bottom: 3rem;
+    overflow: hidden;
     img {
       width: 100%;
       border-radius: 2rem;
-      height: 94%;
+      height: 100%;
       object-fit: cover;
       display: block;
       opacity: 0.5;

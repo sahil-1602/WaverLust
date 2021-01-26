@@ -6,6 +6,13 @@
   font-family: $font-secondary;
   font-size: 1.8rem;
   border-radius: 5rem;
+  box-shadow: 0 0.7rem 1.5rem rgba(#000, 0.3);
+
+  transition: all 0.2s linear;
+
+  &:hover {
+    box-shadow: 0 1rem 2rem rgba(#000, 0.3);
+  }
 
   &--brand-name {
     text-align: center;
