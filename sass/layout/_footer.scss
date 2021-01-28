@@ -1,7 +1,7 @@
 .footer {
   border-radius: 1rem;
-  margin-top: 1px;
-  background-color: $color-primary;
+  margin-top: 1rem;
+  background-color: $color-secondary;
   display: flex;
   padding: 2rem 5rem;
   justify-content: space-between;
@@ -9,7 +9,7 @@
   p {
     font-size: 1.5rem;
     font-family: $font-secondary;
-    color: $color-grey-light-1;
+    color: $color-grey-dark;
   }
 
   &--links {
@@ -20,12 +20,12 @@
       text-decoration: none;
       font-size: 1.5rem;
       font-family: $font-secondary;
-      color: $color-grey-light-1;
+      color: $color-grey-dark;
       transition: all 0.2s;
       border-bottom: 1px solid transparent;
 
       &:hover {
-        color: $color-grey-dark;
+        color: $color-grey-light-1;
         border-bottom: 1px solid $color-grey-light-1;
       }
     }
