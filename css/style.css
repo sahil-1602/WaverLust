@@ -348,3 +348,29 @@ body {
         color: #2c3e50; }
     .services--customer__faq {
       margin-right: 6rem; }
+
+.footer {
+  border-radius: 1rem;
+  margin-top: 1px;
+  background-color: #ef629f;
+  display: flex;
+  padding: 2rem 5rem;
+  justify-content: space-between; }
+  .footer p {
+    font-size: 1.5rem;
+    font-family: "Nunito", sans-serif;
+    color: #f7f7f7; }
+  .footer--links {
+    display: flex;
+    justify-content: space-between; }
+    .footer--links a {
+      margin-left: 2rem;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-family: "Nunito", sans-serif;
+      color: #f7f7f7;
+      transition: all 0.2s;
+      border-bottom: 1px solid transparent; }
+      .footer--links a:hover {
+        color: #2c3e50;
+        border-bottom: 1px solid #f7f7f7; }
