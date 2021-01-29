@@ -1,0 +1,67 @@
+.card {
+  margin: 5rem 3rem;
+  min-width: 25%;
+  height: 35rem;
+  background-color: $color-grey-dark;
+  box-shadow: 0 1rem 2rem rgba(#000, 0.4);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: 0 1rem 1rem rgba(#000, 0.4);
+  }
+
+  &--img {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    &-1 {
+      transition: all 0.3s linear;
+      opacity: 1;
+      z-index: 2;
+      &:hover {
+        opacity: 0;
+      }
+    }
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+  }
+
+  &--detail {
+    padding: 1rem;
+    margin-top: 1rem;
+    color: #fff;
+    z-index: -1;
+    transform: translateY(-0.5rem);
+    &__name {
+      font-size: 2rem;
+      text-align: center;
+      font-weight: 200;
+      margin-bottom: 0.5rem;
+    }
+
+    &__price {
+      font-size: 1.8rem;
+      text-align: center;
+      font-weight: 400;
+      margin-top: -0.5rem;
+
+      &--amount {
+        color: rgb(206, 94, 94);
+        text-decoration: line-through;
+        margin: 1rem;
+      }
+      &--offer {
+        color: rgb(110, 216, 110);
+        margin-left: 2rem;
+      }
+    }
+  }
+}
