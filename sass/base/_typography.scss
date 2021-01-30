@@ -15,4 +15,7 @@
   letter-spacing: 0.7rem;
   border-bottom: 1px solid $color-grey-light-1;
   display: inline-block;
+  @media only screen and (max-width: $bp-smaller) {
+    font-size: 2.5rem;
+  }
 }

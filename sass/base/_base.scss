@@ -8,6 +8,13 @@
 
 html {
   font-size: 62.5%; // 1rem = 10px 10/16 = 62.5%
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-large) {
+    font-size: 45%;
+  }
 }
 
 body {
@@ -15,4 +22,7 @@ body {
   padding: 3rem;
   font-family: $font-primary;
   background-color: $color-grey-light-1;
+  @media only screen and (max-width: $bp-small) {
+    padding: 0;
+  }
 }

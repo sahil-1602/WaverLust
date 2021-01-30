@@ -13,8 +13,11 @@
   padding: 1rem;
   transition: all 0.3s ease-out;
 
+  box-shadow: 0 1rem 2rem rgba(#000, 0.5);
+
   &:hover {
     color: $color-grey-light-1;
     background-color: $color-grey-dark;
+    box-shadow: 0 1rem 2rem rgba(#000, 0.15);
   }
 }

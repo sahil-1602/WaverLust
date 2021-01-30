@@ -30,7 +30,7 @@
   }
 
   &--item {
-    width: 25%;
+    width: 35rem;
     height: 30rem;
     margin: 5rem 3rem;
     border-radius: 1rem;
@@ -38,11 +38,17 @@
     box-shadow: 0 1rem 2rem rgba(#000, 0.4);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     cursor: pointer;
     padding: 0.5rem;
     transition: all 0.4s;
     color: transparent;
+    @media only screen and (max-width: $bp-large) {
+      margin: 5rem 1rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
 
     &__text {
       text-align: center;
@@ -57,40 +63,41 @@
     }
 
     &-1 {
+      position: relative;
       background-image: linear-gradient(
-          to right bottom,
-          rgba($color-grey-dark, 0.4),
-          rgba($color-grey-dark, 0.3)
-        ),
-        url(../img/collection-1.jpg);
-      background-position: left;
+        to right bottom,
+        rgba($color-grey-dark, 0.4),
+        rgba($color-grey-dark, 0.3)
+      );
+
+      @include image-fit;
     }
     &-2 {
+      position: relative;
       background-image: linear-gradient(
-          to right bottom,
-          rgba($color-grey-dark, 0.4),
-          rgba($color-grey-dark, 0.3)
-        ),
-        url(../img/collection-2.jpg);
-      background-position: left;
+        to right bottom,
+        rgba($color-grey-dark, 0.4),
+        rgba($color-grey-dark, 0.3)
+      );
+      @include image-fit;
     }
     &-3 {
+      position: relative;
       background-image: linear-gradient(
-          to right bottom,
-          rgba($color-grey-dark, 0.4),
-          rgba($color-grey-dark, 0.3)
-        ),
-        url(../img/collection-3.png);
-      background-position: left;
+        to right bottom,
+        rgba($color-grey-dark, 0.4),
+        rgba($color-grey-dark, 0.3)
+      );
+      @include image-fit;
     }
     &-4 {
+      position: relative;
       background-image: linear-gradient(
-          to right bottom,
-          rgba($color-grey-dark, 0.4),
-          rgba($color-grey-dark, 0.3)
-        ),
-        url(../img/collection-4.jpg);
-      background-position: left;
+        to right bottom,
+        rgba($color-grey-dark, 0.4),
+        rgba($color-grey-dark, 0.3)
+      );
+      @include image-fit;
     }
   }
 

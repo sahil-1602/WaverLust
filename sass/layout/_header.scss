@@ -1,5 +1,5 @@
 .header {
-  height: 65vh;
+  height: 70vh;
   background-size: cover;
   background-position: top;
   position: relative;
@@ -12,13 +12,24 @@
     ),
     url(../img/background.jpg);
   margin-bottom: 4rem;
+  padding: 6rem;
+  @media only screen and (max-width: $bp-medium) {
+    text-align: center;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0;
+  }
 
   &--logo-box {
     width: 30vw;
     height: auto;
-    margin-left: 6rem;
     margin-bottom: 3rem;
-    margin-top: 3rem;
+    @media only screen and (max-width: $bp-medium) {
+      width: 60vw;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &--logo {
@@ -28,27 +39,34 @@
 
   &--heading {
     line-height: 4rem;
-    margin-left: 6rem;
+
     margin-bottom: 3rem;
     grid-row: 2 / 3;
   }
 
   &--button {
-    display: inline;
     grid-row: 3 / 4;
-    margin-left: 6rem;
-    box-shadow: 0 1rem 2rem rgba(#000, 0.5);
-    &:hover {
-      box-shadow: 0 1rem 2rem rgba(#000, 0.15);
+  }
+
+  &--first-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media only screen and (max-width: $bp-medium) {
+      align-items: center;
     }
   }
 
   &--second-half {
+    margin: -6rem;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @media only screen and (max-width: $bp-large) {
+      display: none;
+    }
   }
 
   &--img-1 {
