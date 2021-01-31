@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
   align-items: center;
   justify-content: space-between;
   font-family: $font-secondary;
@@ -13,6 +13,7 @@
   @media only screen and (max-width: $bp-medium) {
     flex-direction: column;
     font-size: 2rem;
+    border-radius: 0;
   }
 
   &:hover {

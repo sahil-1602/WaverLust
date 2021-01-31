@@ -4,9 +4,7 @@
   &--cards {
     margin-left: -3rem;
     display: flex;
-    overflow-x: auto;
-    &::-webkit-scrollbar {
-      width: 0;
-    }
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
